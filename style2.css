@@ -6,10 +6,10 @@ body {
 */
 @hyphenate-resource {
   /* English */
-  en:    url(en-GB.hy);
-  en-US: url(en-US.hy);
-  en-x-hixie:    url(hixie.hy), local, url(en-GB.hy);
-  en-US-x-hixie: url(hixie.hy), local, url(en-US.hy);
+  en: url(en-GB.hy);
+  en-us: url(en-US.hy);
+  en-x-hixie: url(hixie.hy), local, url(en-GB.hy);
+  en-us-x-hixie: url(hixie.hy), local, url(en-US.hy);
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700,800,900|Raleway:900|Roboto:100,200,300,400,500&display=swap");
 
@@ -51,6 +51,14 @@ h3 {
   color: black;
 }
 
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  color: black;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   color: darkslategray;
@@ -59,14 +67,14 @@ p {
   line-height: 1.5;
   text-align: justify;
   text-justify: inter-word;
-  }
+}
 
 /* ------------ Navabar ------------- */
 /* ------------ Navabar ------------- */
 /* ------------ Navabar ------------- */
 
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   background-color: rgb(36, 16, 41);
   height: 100px;
@@ -83,8 +91,8 @@ p {
 }
 
 .navbar .menu {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   list-style: none;
   overflow: hidden;
   background-color: rgb(36, 16, 41);
@@ -98,13 +106,12 @@ p {
   font-weight: 400;
   color: lightgray;
   text-decoration: none;
-  padding:20px;
+  padding: 20px;
   transition: color 0.7s;
 }
 
 .navbar .menu a:hover {
   color: rgb(255, 255, 86);
-  
 }
 
 .navbar .menu-icon {
@@ -128,24 +135,24 @@ p {
 
 .navbar .menu-icon .nav-icon:before {
   background: lightgray;
-  content:"";
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 7px;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .navbar .menu-icon .nav-icon:after {
   background: lightgray;
-  content:"";
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
   position: absolute;
   top: -7px;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .navbar .menu-btn {
@@ -168,16 +175,17 @@ p {
   top: 0;
 }
 
-
 /* -------------- Homepage ----------------- */
 /* -------------- Homepage ----------------- */
 /* -------------- Homepage ----------------- */
 
-.home-header{
+.home-header {
   background-color: rgb(36, 16, 41);
   position: relative;
+  height: 60vh;
+  margin-bottom: 150px;
 }
-.homepage .home_hero {
+/* .homepage .home_hero {
   display: none;
   position: relative;
   top: 100px;
@@ -187,7 +195,7 @@ p {
   height: 35vh;
   width: 100%;
   z-index: 0;
-}
+} */
 .homepage .home-h-1 h1 {
   color: aliceblue;
 }
@@ -204,7 +212,7 @@ p {
 
 .homepage .gsm {
   position: relative;
-  top: 150px;
+  top: 25px;
   z-index: 2;
   width: 80%;
   margin-top: 0px;
@@ -236,26 +244,44 @@ p {
 }
 
 .why {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   clear: both;
-  padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .why .why-head {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
   width: 1200px;
   margin: auto;
 }
 
-.why .why-head h2 {
+.why .why-head .why-head-txt h2 {
   text-align: center;
   font-size: calc(40px + (40 - 20) * ((100vw - 375px) / (1920 - 375)));
 }
 
-.why .why-head p {
+.why .why-head .why-head-txt p {
   text-align: center;
-  font-size: calc(18px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.why .why-head .why-head-vid {
+  margin: 50px auto 100px auto;
+}
+
+.why .why-head .why-head-vid video {
+  border-radius: 50px;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.why .why-boxes-container {
+  background-color: rgba(249, 246, 255, 0.452);
+  width: 100%;
 }
 
 .why .why-boxes {
@@ -263,8 +289,9 @@ p {
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
-  width: 80%;
-  padding-top: 30px;
+  width: 1200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .why .why-boxes .box {
@@ -301,7 +328,7 @@ p {
 }
 
 .industry .text {
-  width: 500px;
+  width: 600px;
   margin: 0 50px;
 }
 
@@ -309,30 +336,228 @@ p {
   font-size: 40px;
 } */
 
-.industry .text p {
-  color: darkslategray;
-  font-size: calc(18px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
-}
-
 .industry .img {
-  width: 350px;
+  width: 300px;
   margin: 0 50px;
 }
 
+/* ---------------- How It Works --------------------- */
+/* ---------------- How It Works --------------------- */
+/* ---------------- How It Works --------------------- */
+/* ---------------- How It Works --------------------- */
+
+.faq {
+  width: 100%;
+}
+
+.faq .accordian {
+  width: 60%;
+  margin: auto;
+}
+
+.faq .accordian .accordian-wrapper {
+  list-style: none;
+}
+
+.faq .accordian .accordian-item {
+  /* display: block; */
+  border-top: solid 1px lightgray;
+  padding: 20px;
+  width: 100%;
+}
+
+.faq .accordian .accordian-item span {
+  display: block;
+}
+
+.faq .accordian .accordian-item .checkbox {
+  display: none;
+}
+
+.faq .accordian .accordian-item label {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.faq .accordian .accordian-item h4 {
+  display: block;
+  float: left;
+  margin: auto 0;
+  padding-top: 10px;
+  cursor: pointer;
+  width: 90%;
+}
+
+.faq .accordian .accordian-item .help-icon {
+  display: block;
+  width: 50px;
+  margin: auto 20px auto 0;
+  float: left;
+}
+
+.faq .accordian .accordian-item .arrow-icon {
+  background-color: gray;
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 3px;
+  top: 20px;
+  border-radius: 5px;
+  margin: auto;
+  float: right;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.faq .accordian .accordian-item .arrow-icon:before {
+  background-color: gray;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin: auto;
+  float: right;
+  transform: rotate(-90deg);
+  left: 6px;
+  top: -6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.faq .accordian .accordian-item input:checked ~ .arrow-icon {
+  transform: translate(15px) rotate(45deg);
+}
+
+.faq .accordian .accordian-item input:checked ~ .arrow-icon:before {
+  transform: translate(-12.5px, 12.5px) rotate(-90deg);
+}
+
+.faq .accordian .accordian-item .panel {
+  position: relative;
+  padding: 0 70px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  z-index: 2;
+  clear: both;
+}
+
+.faq .accordian .accordian-item input:checked ~ .panel {
+  max-height: 800px;
+}
+
+#contact {
+  max-width: 700px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 16px "Roboto", sans-serif;
+}
+
+#contact fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100px;
+  border-radius: 20px;
+  border: none;
+  background: #0cf;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #09c;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+::-webkit-input-placeholder {
+  color: #888;
+}
+:-moz-placeholder {
+  color: #888;
+}
+::-moz-placeholder {
+  color: #888;
+}
+:-ms-input-placeholder {
+  color: #888;
+}
+
+.error {
+  color: red;
+  font: 400 16px "Roboto", sans-serif;
+}
+
+.success {
+  color: red;
+  font: 400 16px "Roboto", sans-serif;
+}
+
 /* ---------------- Media Queries --------------------- */
 /* ---------------- Media Queries --------------------- */
 /* ---------------- Media Queries --------------------- */
 /* ---------------- Media Queries --------------------- */
 
-
-@media (max-width:1500px) {
+@media (max-width: 1500px) {
   /* .homepage .gsm {
     top: 20px;
   } */
-  .homepage .why .why-head{
+  .homepage .why .why-head {
     width: 80%;
   }
-  .homepage .why .why-boxes{
+  .homepage .why .why-boxes {
     width: 90%;
   }
   .homepage .why .why-boxes .box {
@@ -340,45 +565,41 @@ p {
   }
 }
 
-
-@media (max-width:1400px) {
+@media (max-width: 1400px) {
   .homepage .gsm {
     top: 125px;
   }
   .homepage .home-header .gsm p {
-      font-size: 19px;
+    font-size: 19px;
   }
-  
 }
 
-
-@media (max-width:1350px) {
+@media (max-width: 1350px) {
   /* .homepage .gsm {
     top: 70px;
   } */
   .homepage .home-header .gsm p {
     font-size: 17px;
-}
+  }
   .homepage .home-header .gsm h1 {
     font-size: 36px;
-}
+  }
   .homepage .why .box {
     width: 275px;
   }
 }
 
-
-@media (max-width:1300px) {
+@media (max-width: 1300px) {
   .homepage .home-header {
     top: 50px;
-  }  
+  }
   .homepage .gsm {
     top: 75px;
   }
   .homepage .why .why-head {
     width: 80%;
   }
-  .homepage .why .why-boxes{
+  .homepage .why .why-boxes {
     width: 90%;
     justify-content: center;
   }
@@ -397,7 +618,7 @@ p {
   }
   .homepage .home-header .gsm h1 {
     font-size: 32px;
-}
+  }
 }
 
 @media (max-width: 1100px) {
@@ -411,20 +632,19 @@ p {
   }
   .homepage .home-header .gsm h1 {
     font-size: 30px;
-}
-.homepage .home-header .gsm p {
-  font-size: 16px;
-}
-/* .homepage .home-header .gsm_img {
+  }
+  .homepage .home-header .gsm p {
+    font-size: 16px;
+  }
+  /* .homepage .home-header .gsm_img {
   width: 400px;
 } */
 }
 
-
 @media (max-width: 950px) {
-  
   .navbar {
     height: 80px;
+    position: static;
   }
   .navbar .menu {
     clear: both;
@@ -432,11 +652,15 @@ p {
     max-height: 0;
     transition: max-height 0.3s ease-out;
     /* background: rgb(25, 11, 29); */
-    width: 30%;
+    width: 100%;
   }
   .navbar .menu li {
     border-bottom: 1px solid darkslategray;
     text-align: center;
+  }
+  .navbar .menu .reviews {
+    border-bottom: none;
+    margin-bottom: 50px;
   }
   .navbar .logo {
     width: 125px;
@@ -446,7 +670,7 @@ p {
     top: 75px;
   }
   .homepage .home-header {
-    top: 80px;
+    position: static;
   }
   .homepage .home-h-1 {
     display: none;
@@ -480,7 +704,7 @@ p {
   .homepage .gsm_img {
     width: 400px;
   }
-  .homepage .why .why-boxes{
+  .homepage .why .why-boxes {
     width: 100%;
     justify-content: center;
   }
@@ -490,7 +714,6 @@ p {
   }
   .industry {
     flex-direction: column-reverse;
-    
   }
   .industry .text {
     width: 80%;
@@ -505,10 +728,10 @@ p {
   .navbar li {
     float: left;
   }
-.navbar .menu a,
-.navbar .menu a:active,
-.navbar .menu a:visited,
-.navbar li a{
+  .navbar .menu a,
+  .navbar .menu a:active,
+  .navbar .menu a:visited,
+  .navbar li a {
     padding: 30px 30px;
   }
   .navbar .menu {
@@ -527,23 +750,25 @@ p {
 }
 
 @media (max-width: 790px) {
-  .homepage .home-header{
+  .homepage .home-header {
     width: 100%;
     margin: 0;
   }
   .homepage .home-h-2 {
+    position: static;
     box-sizing: border-box;
     width: 100%;
     /* float: left; */
     padding-left: 30px;
     background-color: rgb(36, 16, 41);
   }
-  .homepage .home-h-2 h1{
+  .homepage .home-h-2 h1 {
     font-size: calc(40px + (40 - 30) * ((100vw - 375px) / (690 - 375)));
     width: 90%;
+    margin: 0;
   }
   .homepage .gsm {
-    top: -40px;
+    position: static;
     margin: 0;
     box-sizing: border-box;
     background-color: rgb(36, 16, 41);
@@ -582,9 +807,22 @@ p {
   }
 }
 @media (max-width: 600px) {
-  .homepage .why .why-head h2 {
-    text-align: left; 
-    font-size: 40px;   
+  .navbar .logo {
+    margin-left: 20px;
+  }
+  .homepage .home-header .home-h-2 {
+    padding-left: 20px;
+  }
+  .homepage .home-header .home-h-2 h1 {
+    font-size: 38px;
+  }
+  .homepage .home-header .gsm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .homepage .home-header . .homepage .why .why-head h2 {
+    text-align: left;
+    font-size: 40px;
   }
   .homepage .why .why-head p {
     text-align: left;
