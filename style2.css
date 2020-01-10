@@ -226,23 +226,23 @@ p {
   position: absolute;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   bottom: 1vw;
-  width: 90%;
+  width: 100%;
   margin: 0 100px 10px 50px;
 }
 
 .footer .footer-content .address {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .footer .footer-content .address .footer-logo {
   width: 200px;
 }
 
-.footer .footer-content .contact-follow .address p,
+.footer .footer-content .address p,
 .footer .footer-content .contact-follow .contact p,
-.footer .footer-content .contact-follow .follow .follow-icons p,
+.footer .footer-content .contact-follow .follow .follow-us .follow-icons p,
 .legal p {
   color: rgb(163, 163, 163);
   margin: 0;
@@ -250,7 +250,8 @@ p {
 }
 
 .footer .footer-content .contact-follow .contact h4,
-.footer .footer-content .contact-follow .follow h4 {
+.footer .footer-content .contact-follow .follow h4,
+.footer .footer-content .footer-nav {
   color: aliceblue;
   font-size: 28px;
   font-weight: 700;
