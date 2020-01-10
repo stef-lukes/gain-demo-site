@@ -1302,7 +1302,7 @@ p {
   .footer::after {
     display: none;
   }
-  .footer-content {
+  .footer .footer-content {
     position: unset;
     flex-direction: column-reverse;
     justify-content: center;
@@ -1311,7 +1311,7 @@ p {
     padding-top: 100px;
   }
   .footer .footer-content .address p,
-  .footer .footer-content .follow .follow-us,
+  .footer .footer-content .follow .follow-us h4,
   .footer .footer-content .contact h4,
   .footer .footer-content .contact p,
   .footer .footer-nav h4,
@@ -1325,7 +1325,7 @@ p {
   }
   .footer .footer-content .follow .follow-icons img {
     margin:auto;
-    padding: auto;
+    padding-right: 0;
   }
   .footer .footer-content .follow p {
     text-align: center;
