@@ -243,7 +243,7 @@ p {
 
 .footer .footer-content .address p,
 .footer .footer-content .contact-follow .contact p,
-.footer .footer-content .contact-follow .follow .follow-us .follow-icons p,
+.footer .footer-content .contact-follow .follow p,
 .legal p {
   color: rgb(163, 163, 163);
   margin: 0;
@@ -264,17 +264,17 @@ p {
   font-size: 14px;
 }
 
-.footer .footer-content .follow {
+.footer .footer-content .contact-follow .follow {
   margin-top: 20px;
 }
 
-.footer .footer-content .follow .follow-icons {
+.footer .footer-content .contact-follow .follow .follow-icons {
   display: flex;
   justify-content: flex-start;
   margin-top: 7.5px;
 }
 
-.footer .footer-content .follow .follow-icons img {
+.footer .footer-content .contact-follow .follow .follow-icons img {
   width: 30px;
   margin-right: 15px;
   padding-right: 15px;
@@ -1318,11 +1318,11 @@ p {
   .legal p {
     text-align: center;
   }
-  .footer .footer-content .follow .follow-icons {
+  .footer .footer-content .contact-follow .follow .follow-icons {
     justify-content: space-between;
     margin: 15px;
   }
-  .footer .footer-content .follow .follow-icons img {
+  .footer .footer-content .contact-follow .follow .follow-icons img {
     margin:auto;
     padding-right: 0;
   }
