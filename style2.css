@@ -1297,7 +1297,6 @@ p {
     position: relative;
     height: 1000px;
     background-color: rgb(36, 16, 41);
-    z-index: -50;
   }
   .footer::after {
     display: none;
@@ -1311,7 +1310,7 @@ p {
     padding-top: 100px;
   }
   .footer .footer-content .address p,
-  .footer .footer-content .follow .follow-us h4,
+  .footer .footer-content .contact-follow .follow h4,
   .footer .footer-content .contact h4,
   .footer .footer-content .contact p,
   .footer .footer-nav h4,
@@ -1339,7 +1338,7 @@ p {
     width: unset;
   }
 
-  @media (max-width:700px) {
+  @media (max-width: 700px) {
 
     .homepage .why .why-head .why-head-txt h2 {
       font-size: 9vw;
@@ -1372,6 +1371,10 @@ p {
     .how-it-works .how-header .hiw-txt p{
       text-align: left;
       line-height: 1.7;
+    }
+    .how-it-works .steps .step-txt {
+      width: 100%;
+      margin: 0;
     }
     .how-it-works .steps .step-img {
       width: 75vw;
