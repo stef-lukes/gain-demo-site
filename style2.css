@@ -1024,10 +1024,10 @@ p {
     width: 30%;
     margin: 5%;
   }
-  .industry {
+  .homepage .industry {
     flex-direction: column-reverse;
   }
-  .industry .text {
+  .homepage .industry .text {
     width: 70%;
   }
   .homepage .industry .text .industry-hdr1 {
@@ -1039,7 +1039,7 @@ p {
     font-size: 50px;
   }
 
-  .industry .img {
+  .homepage .industry .img {
     width: 300px;
     margin-bottom: 25px;
   }
