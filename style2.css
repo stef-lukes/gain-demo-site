@@ -111,6 +111,7 @@ p {
   text-decoration: none;
   padding: 20px;
   transition: color 0.7s;
+  -moz-transition: color 0.7s;
 }
 
 .navbar .menu a:hover {
@@ -285,6 +286,7 @@ p {
   text-decoration: none;
   padding: 5px;
   transition: color 0.7s;
+  -moz-transition: color 0.7s;
   text-align: left;
   margin-left: 0;
   padding-left: 0;
