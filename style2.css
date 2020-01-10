@@ -225,11 +225,11 @@ p {
 .footer .footer-content {
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   bottom: 1vw;
   width: 100%;
-  margin: 0 100px 10px 50px;
+  margin: auto;
 }
 
 .footer .footer-content .address {
@@ -251,7 +251,7 @@ p {
 
 .footer .footer-content .contact-follow .contact h4,
 .footer .footer-content .contact-follow .follow h4,
-.footer .footer-content .footer-nav {
+.footer .footer-content .footer-nav h4 {
   color: aliceblue;
   font-size: 28px;
   font-weight: 700;
