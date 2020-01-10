@@ -206,7 +206,7 @@ p {
 
 .footer {
   position: relative;
-  height: 35vw;
+  height: 30vw;
 }
 
 .footer::after {
@@ -225,9 +225,9 @@ p {
 .footer .footer-content {
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
-  bottom: 1vw;
+  bottom: 4vw;
   width: 100%;
   margin: auto;
   z-index: 200;
@@ -243,8 +243,7 @@ p {
 
 .footer .footer-content .address p,
 .footer .footer-content .contact-follow .contact p,
-.footer .footer-content .contact-follow .follow p,
-.legal p {
+.footer .footer-content .contact-follow .follow p {
   color: rgb(163, 163, 163);
   margin: 0;
   padding: 7.5px 0;
@@ -254,30 +253,47 @@ p {
 .footer .footer-content .contact-follow .follow h4,
 .footer .footer-content .footer-nav h4 {
   color: aliceblue;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   margin: 0;
   padding: 7.5px 0;
 }
 
+.footer .footer-content .contact-follow .follow p,
+.footer .footer-content .contact-follow .follow h4 {
+  padding: 0;
+}
+
 .footer .footer-content .address p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer .footer-content .contact-follow .follow {
   margin-top: 20px;
 }
 
-.footer .footer-content .contact-follow .follow .follow-icons {
+.footer .footer-content .contact-follow .follow .follow-links {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 7.5px;
+  align-items: center;
+  list-style: none;
+  float: left;
+  padding-left: 0;
+  margin: 10px 0 7px 0;
 }
 
-.footer .footer-content .contact-follow .follow .follow-icons img {
-  width: 30px;
+.footer .footer-content .contact-follow .follow .follow-links li {
+  display: inline-block;
+  float: left;
+}
+
+.footer .footer-content .contact-follow .follow .follow-links li a {
+  display: block;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+.footer .footer-content .contact-follow .follow .follow-links img {
+  width: 30px;
 }
 
 .footer .footer-content .footer-nav ul {
@@ -306,19 +322,24 @@ p {
   color: white;
 }
 
-.legal {
+.footer .legal {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin: -2px auto;
-  padding: 15px;
+  margin: 15px auto -10px auto;  
   background-color: rgb(36, 16, 41);
 }
 
-.legal p {
+.footer .legal p {
   font-size: 16px;
+  font-weight: 400;
 }
 
-.legal a {
+.footer .legal a,
+.footer .legal a:visited,
+.footer .legal a:active {
   font-family: Roboto;
   font-weight: 400;
   color: rgb(163, 163, 163);
@@ -327,7 +348,7 @@ p {
   transition: color 0.7s;
 }
 
-.legal a:hover {
+.footer .legal a:hover {
   color: white;
 }
 
@@ -871,6 +892,9 @@ p {
   .how-it-works .steps .step-img {
     width: 40vw;
   }
+  .footer {
+    height: 32vw;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -901,6 +925,9 @@ p {
   .how-it-works .how-header .hiw-txt {
     top: 0;
   }
+  .footer {
+    height: 34vw;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -909,9 +936,6 @@ p {
   }
   .homepage .why .box {
     width: 275px;
-  }
-  .footer {
-    height: 40vw;
   }
 }
 
@@ -1026,6 +1050,7 @@ p {
   }
   .homepage .industry {
     flex-direction: column-reverse;
+    padding: 0;
   }
   .homepage .industry .text {
     width: 70%;
@@ -1074,6 +1099,9 @@ p {
   }
   .how-it-works .steps #analytics {
     width: 45vw;
+  }
+  .footer {
+    height: 36vw;
   }
 }
 
@@ -1171,7 +1199,7 @@ p {
     padding: unset;
   }
   .footer {
-    height: 45vw;
+    height: 38vw;
   }
 }
 
@@ -1319,16 +1347,30 @@ p {
   .legal p {
     text-align: center;
   }
-  .footer .footer-content .contact-follow .follow .follow-icons {
+  .footer .footer-content .address {
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+  }
+  .footer .footer-content .address p {
+    margin-top: 15px;
+  }
+  .footer .footer-content .contact-follow .follow {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-content .contact-follow .follow .follow-links {
     justify-content: space-between;
   }
-  .footer .footer-content .contact-follow .follow .follow-icons img {
-    margin:auto;
-    padding-right: 0;
-  }
+  .footer .footer-content .contact-follow .follow .follow-links li a {
+    display: block;
+    margin: 0 15px;
+    padding: 15px;
+}
   .footer .footer-content .contact-follow .follow p {
     text-align: center;
-    /* margin-bottom: 50px; */
   }
   .footer .footer-nav,
   .footer .footer-content .contact {
