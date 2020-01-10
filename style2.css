@@ -1184,19 +1184,19 @@ p {
   .how-it-works .faq .accordian {
     width: 80vw;
   }
-  .faq .accordian .accordian-item {
+  .how-it-works .faq .accordian .accordian-item {
     padding: 12px;
   }
-  .faq .accordian .accordian-item h4 {
-    font-size: 20px;
+  .how-it-works .faq .accordian .accordian-item h4 {
+    font-size: 18px;
     padding-top: 10px;
   }
-  .faq .accordian .accordian-item .arrow-box {
+  .how-it-works .faq .accordian .accordian-item .arrow-box {
     position: relative;
     top: 0px;
   }
-  .faq .accordian .accordian-item .panel {
-    padding: unset;
+  .how-it-works .faq .accordian .accordian-item .panel {
+    padding: 0;
   }
   .footer {
     height: 38vw;
@@ -1344,13 +1344,14 @@ p {
   .footer .footer-content .contact p,
   .footer .footer-nav h4,
   .footer .footer-nav .footer-nav-links a,
-  .legal p {
+  .footer .legal p {
     text-align: center;
   }
   .footer .footer-content .address {
     display: flex;
     margin-top: 75px;
     flex-direction: column;
+    align-items: center;
   }
   .footer .footer-content .address p {
     margin-top: 15px;
@@ -1399,12 +1400,15 @@ p {
       padding-top: 50px;
     }
     .homepage .why .why-boxes-container .why-boxes .box {
-      width: 60%;
-    }
+      width: 80%;
+  }
     .homepage .industry .img {
       width: 150px;
     }
-    .homepage .industry .text .industry-hdr2,
+    .homepage .industry .text .industry-hdr2 {
+      font-size: 9vw;
+      text-align: left;
+    }
     .how-it-works .how-header .how-h-1 .hiw-txt h1 {
       color: aliceblue;
       font-size: 9vw;
@@ -1441,7 +1445,7 @@ p {
       display: none;
     }
     .how-it-works .faq .accordian .accordian-item h4 {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.5;
     }
 }
