@@ -222,7 +222,7 @@ p {
   z-index: -1;
 }
 
-.footer-content {
+.footer .footer-content {
   position: absolute;
   display: flex;
   justify-content: space-around;
@@ -232,17 +232,17 @@ p {
   margin: 0 100px 10px 50px;
 }
 
-.footer-logo {
+.footer .footer-content .address .footer-logo {
   width: 200px;
 }
 
-.footer p {
+.footer .footer-content .footer p {
   color: rgb(163, 163, 163);
   margin: 0;
   padding: 7.5px 0;
 }
 
-.footer h4 {
+.footer .footer-content .footer h4 {
   color: aliceblue;
   font-size: 28px;
   font-weight: 700;
@@ -250,35 +250,35 @@ p {
   padding: 7.5px 0;
 }
 
-.address p {
+.footer .footer-content .address p {
   font-size: 14px;
 }
 
-.follow {
+.footer .footer-content .follow {
   margin-top: 20px;
 }
 
-.follow-icons {
+.footer .footer-content .follow .follow-icons {
   display: flex;
   justify-content: flex-start;
   margin-top: 7.5px;
 }
 
-.follow-icons img {
+.footer .footer-content .follow .follow-icons img {
   width: 30px;
   margin-right: 15px;
   padding-right: 15px;
 }
 
-.footer-nav ul {
+.footer .footer-content .footer-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-nav a,
-.footer-nav a:active,
-.footer-nav a:visited {
+.footer .footer-content .footer-nav a,
+.footer .footer-content .footer-nav a:active,
+.footer .footer-content .footer-nav a:visited {
   display: block;
   font-family: Roboto;
   font-weight: 400;
@@ -292,7 +292,7 @@ p {
   padding-left: 0;
 }
 
-.footer-nav a:hover {
+.footer .footer-content .footer-nav a:hover {
   color: white;
 }
 
@@ -326,13 +326,13 @@ p {
 /* -------------- Homepage ----------------- */
 /* -------------- Homepage ----------------- */
 
-.home-header {
+.homepage .home-header {
   position: relative;
   height: 35vw;
   margin-bottom: 150px;
 }
 
-.home-header::after {
+.homepage .home-header::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -394,11 +394,11 @@ p {
   width: 110%;
 }
 
-.why {
+.homepage .why {
   width: 100%;
 }
 
-.why .why-head {
+.homepage .why .why-head {
   position: relative;
   top: 75px;
   display: flex;
@@ -409,24 +409,24 @@ p {
   margin: auto;
 }
 
-.why-head-txt {
+.homepage .why-head-txt {
   width: 550px;
   margin: 0 auto;
 }
 
-.why-head-txt h2 {
+.homepage .why-head-txt h2 {
   padding: 0 0 0 0;
   margin: 0;
   font-size: calc(36px + (36 - 20) * ((100vw - 375px) / (1920 - 375)));
   text-align: left;
 }
 
-.why-head-vid {
+.homepage .why-head-vid {
   margin: 0 auto 50px auto;
   padding: 0;
 }
 
-.why-head-vid video {
+.homepage .why-head-vid video {
   border-radius: 20px;
   display: block;
   width: 650px;
@@ -434,20 +434,20 @@ p {
   padding: 0;
 }
 
-.why .why-boxes-container {
+.homepage .why .why-boxes-container {
   width: 100%;
 }
 
-.divider1a {
+.homepage .why-boxes-container .divider1a {
   transform: rotateX(180deg);
   opacity: 0.15;
 }
 
-.divider1b {
+.homepage .why-boxes-container .divider1b {
   opacity: 0.15;
 }
 
-.why .why-boxes {
+.homepage .why .why-boxes-container .why-boxes {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -457,25 +457,25 @@ p {
   padding-bottom: 100px;
 }
 
-.why .why-boxes .box {
+.homepage .why .why-boxes-container .why-boxes .box {
   width: 300px;
   margin: 30px 45px;
 }
 
-.why .why-boxes .box img {
+.homepage .why .why-boxes-container .why-boxes .box img {
   display: block;
   height: 100px;
   margin: auto;
 }
 
-.why .why-boxes .box h3 {
+.homepage .why .why-boxes-container .why-boxes .box h3 {
   text-align: center;
   color: rgb(36, 16, 41);
   padding: 20px 0 15px 0;
   margin: 0;
 }
 
-.why .why-boxes .box p {
+.homepage .why .why-boxes-container .why-boxes .box p {
   font-size: 17px;
   text-align: center;
   color: darkslategray;
@@ -483,7 +483,7 @@ p {
   margin: 0;
 }
 
-.industry {
+.homepage .industry {
   display: flex;
   flex-direction: row-reverse;
   width: 90%;
@@ -493,18 +493,18 @@ p {
   align-items: center;
 }
 
-.industry .text {
+.homepage .industry .text {
   width: 600px;
   margin: 0 50px;
 }
 
-.industry .text h1 {
+.homepage .industry .text h1 {
   font-size: 70px;
   line-height: 1;
   margin-bottom: 30px;
 }
 
-.industry .img {
+.homepage .industry .img {
   width: 350px;
   margin: 0 50px;
 }
@@ -515,14 +515,14 @@ p {
 /* ---------------- How It Works --------------------- */
 
 
-.how-header {
+.how-it-works .how-header {
   width: 100%;
   height: 24vw;
   margin: 0;
   padding: 0;
 }
 
-.how-header::after {
+.how-it-works .how-header::after {
   content: "";
   position: absolute;
   top: -5vw;
@@ -532,12 +532,7 @@ p {
   background-size: 100% auto;
 }
 
-.how-header .how-hero {
-  margin: 0;
-  padding: 0;
-}
-
-.hiw-txt {
+.how-it-works .how-header .hiw-txt {
   position: relative;
   float: right;
   top: 50px;
@@ -547,26 +542,26 @@ p {
   z-index: 90;
 }
 
-.hiw-txt p {
+.how-it-works .how-header .hiw-txt p {
   color: rgb(163, 163, 163);
   font-weight: 300;
   margin: 0;
   padding: 10px 0 0 0;
 }
-.how-h-1 h1 {
+.how-it-works .how-header .how-h-1 h1 {
   color: aliceblue;
   font-size: 50px;
   margin: 0;
   padding: 0;
 }
 
-.how-h-1 img {
+.how-it-works .how-header .how-h-1 img {
   display: block;
   width: 30%;
   margin: auto;
 }
 
-.step-a {
+.how-it-works .steps .step-a {
   width: 95%;
   display: flex;
   justify-content: space-evenly;
@@ -574,7 +569,7 @@ p {
   margin: 125px 50px;
 }
 
-.step-b {
+.how-it-works .steps .step-b {
   width: 95%;
   display: flex;
   flex-direction: row-reverse;
@@ -583,77 +578,77 @@ p {
   margin: 125px 50px;
 }
 
-#step1 {
+.how-it-works .steps #step1 {
   position: relative;
   margin-top: 250px;
   
 }
 
-.step-txt {
+.how-it-works .steps .step-txt {
   width: 500px;
   margin: 0 50px;
 }
 
-.step-txt h2 {
+.how-it-works .steps .step-txt h2 {
   padding: 0 0 20px 0;
   margin: 0;
   font-size: calc(30px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
 }
 
-.step-txt p {
+.how-it-works .steps .step-txt p {
   padding: 0 0 10px 0;
   margin: 0;
   font-size: calc(16px + (16 - 14) * ((100vw - 375px) / (1920 - 375)));
 }
 
-.step-img {
+.how-it-works .steps .step-img {
   display: block;
   width: 750px;
   margin: 0 50px 0 0;
 }
 
-#analytics {
+.how-it-works .steps #analytics {
   width: 500px;
 }
 
-.faq {
+.how-it-works .faq {
   width: 100%;
   margin-bottom: 200px;
 }
 
-.faq .accordian {
+.how-it-works .faq .accordian {
   width: 900px;
   margin: auto;
 }
 
-.faq .accordian .accordian-wrapper {
+.how-it-works .faq .accordian .accordian-wrapper {
   list-style: none;
   padding: 0;
   margin: auto;
 }
 
-.faq .accordian .accordian-item {
+.how-it-works .faq .accordian .accordian-item {
   /* display: block; */
   border-top: solid 1px rgb(230, 230, 230);
   padding: 12.5px;
   width: 100%;
 }
 
-.faq .accordian .accordian-item span {
+.how-it-works .faq .accordian .accordian-item span {
   display: block;
 }
 
-.faq .accordian .accordian-item .checkbox {
+.how-it-works .faq .accordian .accordian-item .checkbox {
   display: none;
 }
 
-.faq .accordian .accordian-item label {
+.how-it-works .faq .accordian .accordian-item label {
   width: 95%;
   display: block;
   cursor: pointer;
 }
 
-.faq .accordian .accordian-item h4 {
+.how-it-works .faq .accordian .accordian-item h4 {
   display: block;
   float: left;
   margin: auto 0;
@@ -663,19 +658,19 @@ p {
   color: rgb(36, 16, 41);
 }
 
-.faq .accordian .accordian-item p {
+.how-it-works .faq .accordian .accordian-item p {
   font-size: 16px;
   line-height: 1.75em;
 }
 
-.faq .accordian .accordian-item .help-icon {
+.how-it-works .faq .accordian .accordian-item .help-icon {
   display: block;
   width: 35px;
   margin: 5px 10px auto 0;
   float: left;
 }
 
-.faq .accordian .accordian-item .arrow-icon {
+.how-it-works .faq .accordian .accordian-item .arrow-icon {
   background-color: rgb(36, 16, 41);
   display: block;
   position: relative;
@@ -689,7 +684,7 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
-.faq .accordian .accordian-item .arrow-icon:before {
+.how-it-works .faq .accordian .accordian-item .arrow-icon:before {
   background-color: rgb(36, 16, 41);
   display: block;
   position: absolute;
@@ -705,15 +700,15 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
-.faq .accordian .accordian-item input:checked ~ .arrow-icon {
+.how-it-works .faq .accordian .accordian-item input:checked ~ .arrow-icon {
   transform: translate(15px) rotate(45deg);
 }
 
-.faq .accordian .accordian-item input:checked ~ .arrow-icon:before {
+.how-it-works .faq .accordian .accordian-item input:checked ~ .arrow-icon:before {
   transform: translate(-12.5px, 12.5px) rotate(-90deg);
 }
 
-.faq .accordian .accordian-item .panel {
+.how-it-works .faq .accordian .accordian-item .panel {
   position: relative;
   padding: 0 70px 20px 70px;
   max-height: 0;
@@ -723,24 +718,24 @@ p {
   clear: both;
 }
 
-.faq .accordian .accordian-item input:checked ~ .panel {
+.how-it-works .faq .accordian .accordian-item input:checked ~ .panel {
   max-height: 800px;
 }
 
-#contact {
+.how-it-works .faq .accordian .accordian-item #contact {
   max-width: 700px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea,
-#contact button[type="submit"] {
+.how-it-works .faq .accordian .accordian-item #contact input[type="text"],
+.how-it-works .faq .accordian .accordian-item #contact input[type="email"],
+.how-it-works .faq .accordian .accordian-item #contact textarea,
+.how-it-works .faq .accordian .accordian-item #contact button[type="submit"] {
   font: 400 16px "Roboto", sans-serif;
 }
 
-#contact fieldset {
+.how-it-works .faq .accordian .accordian-item #contact fieldset {
   border: medium none !important;
   margin: 0 0 10px;
   min-width: 100%;
@@ -748,9 +743,9 @@ p {
   width: 100%;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
+.how-it-works .faq .accordian .accordian-item #contact input[type="text"],
+.how-it-works .faq .accordian .accordian-item #contact input[type="email"],
+.how-it-works .faq .accordian .accordian-item #contact textarea {
   width: 100%;
   border: 1px solid #ccc;
   background: #fff;
@@ -758,22 +753,22 @@ p {
   padding: 10px;
 }
 
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact textarea:hover {
+.how-it-works .faq .accordian .accordian-item #contact input[type="text"]:hover,
+.how-it-works .faq .accordian .accordian-item #contact input[type="email"]:hover,
+.how-it-works .faq .accordian .accordian-item #contact textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#contact textarea {
+.how-it-works .faq .accordian .accordian-item #contact textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
 }
 
-#contact button[type="submit"] {
+.how-it-works .faq .accordian .accordian-item #contact button[type="submit"] {
   cursor: pointer;
   width: 100px;
   border-radius: 20px;
@@ -785,19 +780,19 @@ p {
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+.how-it-works .faq .accordian .accordian-item #contact button[type="submit"]:hover {
   background: #09c;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
+.how-it-works .faq .accordian .accordian-item #contact button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-#contact input:focus,
-#contact textarea:focus {
+.how-it-works .faq .accordian .accordian-item #contact input:focus,
+.how-it-works .faq .accordian .accordian-item #contact textarea:focus {
   outline: 0;
   border: 1px solid #999;
 }
