@@ -214,7 +214,7 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   background: url(assets/wavy-hd-bg2.svg) no-repeat bottom;
   background-size: 110% auto;
   transform: rotate(180deg);
@@ -232,17 +232,25 @@ p {
   margin: 0 100px 10px 50px;
 }
 
+.footer .footer-content .address {
+  margin-top: 20px;
+}
+
 .footer .footer-content .address .footer-logo {
   width: 200px;
 }
 
-.footer .footer-content .footer p {
+.footer .footer-content .contact-follow .address p,
+.footer .footer-content .contact-follow .contact p,
+.footer .footer-content .contact-follow .follow .follow-icons p,
+.legal p {
   color: rgb(163, 163, 163);
   margin: 0;
   padding: 7.5px 0;
 }
 
-.footer .footer-content .footer h4 {
+.footer .footer-content .contact-follow .contact h4,
+.footer .footer-content .contact-follow .follow h4 {
   color: aliceblue;
   font-size: 28px;
   font-weight: 700;
@@ -299,7 +307,6 @@ p {
 .legal {
   display: flex;
   justify-content: center;
-  width: 100%;
   margin: -2px auto;
   padding: 15px;
   background-color: rgb(36, 16, 41);
@@ -542,13 +549,13 @@ p {
   z-index: 90;
 }
 
-.how-it-works .how-header .hiw-txt p {
+.how-it-works .how-header .hiw-txt .how-h-1 p {
   color: rgb(163, 163, 163);
   font-weight: 300;
   margin: 0;
   padding: 10px 0 0 0;
 }
-.how-it-works .how-header .how-h-1 h1 {
+.how-it-works .how-header .hiw-txt .how-h-1 h1 {
   color: aliceblue;
   font-size: 50px;
   margin: 0;
@@ -1006,7 +1013,7 @@ p {
   .homepage .gsm_img {
     width: 400px;
   }
-  .homepage .why .why-boxes {
+  .homepage .why .why-boxes-container .why-boxes {
     width: 100%;
     justify-content: center;
   }
@@ -1058,11 +1065,11 @@ p {
     width: 50vw;
     margin: 40px 0;
   }
-  #step1 {
+  .how-it-works .steps #step1 {
     margin-top: 25vw;
     margin-bottom: 0px;
   }
-  #analytics {
+  .how-it-works .steps #analytics {
     width: 45vw;
   }
 }
@@ -1139,7 +1146,7 @@ p {
   .how-it-works .how-header::after {
     display: none;
   }
-  .how-it-works #step1 {
+  .how-it-works .steps #step1 {
     margin-top: 75px;
   }
   .how-it-works .faq .accordian {
@@ -1365,7 +1372,7 @@ p {
     .how-it-works .steps .step-img {
       width: 75vw;
     }
-    #analytics {
+    .how-it-works .steps #analytics {
       width: 60vw;
     }
     .how-it-works .faq .accordian {
