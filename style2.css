@@ -1383,7 +1383,7 @@ p {
       width: 60vw;
     }
     .how-it-works .faq .accordian {
-      width: 100vw;
+      width: 100%;
     }
     .how-it-works .faq .accordian .accordian-item {
       width: unset;
