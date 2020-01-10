@@ -225,11 +225,12 @@ p {
 .footer .footer-content {
   position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
   bottom: 1vw;
   width: 100%;
   margin: auto;
+  z-index: 200;
 }
 
 .footer .footer-content .address {
@@ -550,17 +551,18 @@ p {
   z-index: 90;
 }
 
-.how-it-works .how-header .hiw-txt .how-h-1 p {
-  color: rgb(163, 163, 163);
-  font-weight: 300;
-  margin: 0;
-  padding: 10px 0 0 0;
-}
 .how-it-works .how-header .hiw-txt .how-h-1 h1 {
   color: aliceblue;
   font-size: 50px;
   margin: 0;
   padding: 0;
+}
+
+.how-it-works .how-header .hiw-txt p {
+  color: rgb(163, 163, 163);
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 0 0 0;
 }
 
 .how-it-works .how-header .how-h-1 img {
@@ -1303,6 +1305,7 @@ p {
   .footer-content {
     position: unset;
     flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
     margin: auto;
     padding-top: 100px;
