@@ -1328,7 +1328,7 @@ p {
   }
   .footer .footer-content .contact-follow .follow p {
     text-align: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .footer .footer-nav,
   .footer .footer-content .contact {
