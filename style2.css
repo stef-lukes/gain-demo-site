@@ -1363,7 +1363,8 @@ p {
       width: 150px;
     }
     .homepage .industry .text .industry-hdr2,
-    .how-it-works .how-header .hiw-txt h1 {
+    .how-it-works .how-header .how-h-1 .hiw-txt h1 {
+      color: aliceblue;
       font-size: 9vw;
       text-align: left;
     }
