@@ -525,12 +525,10 @@ p {
 
 
 .how-it-works .how-header {
-  position: relative;
   width: 100%;
   height: 24vw;
   margin: 0;
   padding: 0;
-  z-index: -250;
 }
 
 .how-it-works .how-header::after {
@@ -541,7 +539,6 @@ p {
   height: 110%;
   background: url(assets/how-hdr-dt.png) no-repeat top;
   background-size: 100% auto;
-  z-index: -240;
 }
 
 .how-it-works .how-header .hiw-txt {
@@ -551,16 +548,18 @@ p {
   right: 50px;
   width: 800px;
   margin: 0 75px;
-  /* z-index: 90; */
+  z-index: 90;
 }
 
 .how-it-works .how-header .hiw-txt .how-h-1 h1 {
+  color: aliceblue !important;
   font-size: 50px;
   margin: 0;
   padding: 0;
 }
 
 .how-it-works .how-header .hiw-txt p {
+  color: rgb(163, 163, 163) !important;
   font-weight: 300;
   margin: 0;
   padding: 10px 0 0 0;
