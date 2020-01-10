@@ -1321,7 +1321,7 @@ p {
   }
   .footer .footer-content .contact-follow .follow .follow-icons {
     justify-content: space-between;
-    margin: 15px;
+    padding: 15px;
   }
   .footer .footer-content .contact-follow .follow .follow-icons img {
     margin:auto;
