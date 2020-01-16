@@ -52,7 +52,7 @@
             <li><a href="instagrowth">Instagrowth</a></li>
             <li class="reviews"><a href="reviews.html">Reviews</a></li>
             <li class="login" id="login">
-                <form action="login.html">
+                <form action="login.html" id="login">
                     <input type="submit" value="Login" />
                 </form>
             </li>
@@ -100,7 +100,7 @@
 
                         </div>
                         <form action="silver.html">
-                            <input type="submit" value="Get Started" />
+                            <input type="submit" value="Get Started" id="silver-start"/>
                         </form>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
 
                         </div>
                         <form action="gold.html">
-                            <input type="submit" value="Get Started" />
+                            <input type="submit" value="Get Started" id="gold-start"/>
                         </form>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
 
                         </div>
                         <form action="enterprise.html">
-                            <input type="submit" value="Get Started" />
+                            <input type="submit" value="Get Started" id="enterprise-start"/>
                             <!-- </form> -->
                     </div>
                 </div>
@@ -233,11 +233,11 @@
             <div class="footer-nav">
                 <h4>Useful Links</h4>
                 <ul class="footer-nav-links">
-                    <li><a href="login.html">Dashboard Login</a></li>
+                    <li><a href="login.html" id="footer-login">Dashboard Login</a></li>
                     <li><a href=""
                             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gainsocialmedia/15min'});return false;">Schedule
                             A Call</a></li>
-                    <li><a href="manage.html">Manage Subscription</a></li>
+                            <li><a href="manage.html" id="manage">Manage Subscription</a></li>
                     <li><a href="legal.html">FAQ's</a></li>
                     <li><a href="legal.html">Terms & Conditions</a></li>
                 </ul>
