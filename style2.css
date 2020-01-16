@@ -146,6 +146,7 @@ p {
   border-radius: 30px;
   margin: 7px 0 0 10px;
   padding: 12px 20px;
+  -webkit-appearance: none;
   transition: all 0.7s;
 }
 
@@ -839,8 +840,7 @@ p {
 
 .how-it-works .faq .accordian .accordian-item #contact button[type="submit"]:hover {
   background: #09c;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
+  -webkit-appearance: none;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -1035,6 +1035,7 @@ p {
   border-radius: 30px;
   padding: 12px 20px;
   border: rgb(36, 16, 41) 2px solid;
+  -webkit-appearance: none;
   transition: all 0.2s;
 }
 
@@ -1080,6 +1081,7 @@ p {
   margin: 20px 20px 20px 0;
   padding: 12px 20px;
   border: rgb(36, 16, 41) 2px solid;
+  -webkit-appearance: none;
   transition: all 0.2s;
 }
 
@@ -1673,7 +1675,7 @@ p {
     text-align: left;
   }
   .packages .packages-header .intro h1 {
-    font-size: 54px;
+    font-size: 6vw;
     line-height: 1.1;
     margin-bottom: 20px;
   }
