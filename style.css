@@ -692,21 +692,21 @@ p {
   width: 100%;
 }
 
-.how-it-works .faq .accordian .accordion-item span {
+.how-it-works .faq .accordion .accordion-item span {
   display: block;
 }
 
-.how-it-works .faq .accordian .accordion-item .checkbox {
+.how-it-works .faq .accordion .accordion-item .checkbox {
   display: none;
 }
 
-.how-it-works .faq .accordian .accordion-item label {
+.how-it-works .faq .accordion .accordion-item label {
   width: 95%;
   display: block;
   cursor: pointer;
 }
 
-.how-it-works .faq .accordian .accordion-item h4 {
+.how-it-works .faq .accordion .accordion-item h4 {
   display: block;
   float: left;
   margin: auto 0;
@@ -716,19 +716,19 @@ p {
   color: rgb(36, 16, 41);
 }
 
-.how-it-works .faq .accordian .accordion-item p {
+.how-it-works .faq .accordion .accordion-item p {
   font-size: 16px;
   line-height: 1.75em;
 }
 
-.how-it-works .faq .accordian .accordion-item .help-icon {
+.how-it-works .faq .accordion .accordion-item .help-icon {
   display: block;
   width: 35px;
   margin: 5px 10px auto 0;
   float: left;
 }
 
-.how-it-works .faq .accordian .accordion-item .arrow-icon {
+.how-it-works .faq .accordion .accordion-item .arrow-icon {
   background-color: rgb(36, 16, 41);
   display: block;
   position: relative;
@@ -742,7 +742,7 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
-.how-it-works .faq .accordian .accordion-item .arrow-icon:before {
+.how-it-works .faq .accordion .accordion-item .arrow-icon:before {
   background-color: rgb(36, 16, 41);
   display: block;
   position: absolute;
@@ -758,15 +758,15 @@ p {
   transition: all 0.4s ease-in-out;
 }
 
-.how-it-works .faq .accordian .accordion-item input:checked ~ .arrow-icon {
+.how-it-works .faq .accordion .accordion-item input:checked ~ .arrow-icon {
   transform: translate(15px) rotate(45deg);
 }
 
-.how-it-works .faq .accordian .accordion-item input:checked ~ .arrow-icon:before {
+.how-it-works .faq .accordion .accordion-item input:checked ~ .arrow-icon:before {
   transform: translate(-12.5px, 12.5px) rotate(-90deg);
 }
 
-.how-it-works .faq .accordian .accordion-item .panel {
+.how-it-works .faq .accordion .accordion-item .panel {
   position: relative;
   padding: 0 70px 20px 70px;
   max-height: 0;
@@ -776,24 +776,24 @@ p {
   clear: both;
 }
 
-.how-it-works .faq .accordian .accordion-item input:checked ~ .panel {
+.how-it-works .faq .accordion .accordion-item input:checked ~ .panel {
   max-height: 800px;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact {
+.how-it-works .faq .accordion .accordion-item #contact {
   max-width: 700px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact input[type="text"],
-.how-it-works .faq .accordian .accordion-item #contact input[type="email"],
-.how-it-works .faq .accordian .accordion-item #contact textarea,
-.how-it-works .faq .accordian .accordion-item #contact button[type="submit"] {
+.how-it-works .faq .accordion .accordion-item #contact input[type="text"],
+.how-it-works .faq .accordion .accordion-item #contact input[type="email"],
+.how-it-works .faq .accordion .accordion-item #contact textarea,
+.how-it-works .faq .accordion .accordion-item #contact button[type="submit"] {
   font: 400 16px "Roboto", sans-serif;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact fieldset {
+.how-it-works .faq .accordion .accordion-item #contact fieldset {
   border: medium none !important;
   margin: 0 0 10px;
   min-width: 100%;
@@ -801,9 +801,9 @@ p {
   width: 100%;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact input[type="text"],
-.how-it-works .faq .accordian .accordion-item #contact input[type="email"],
-.how-it-works .faq .accordian .accordion-item #contact textarea {
+.how-it-works .faq .accordion .accordion-item #contact input[type="text"],
+.how-it-works .faq .accordion .accordion-item #contact input[type="email"],
+.how-it-works .faq .accordion .accordion-item #contact textarea {
   width: 100%;
   border: 1px solid #ccc;
   background: #fff;
@@ -811,22 +811,22 @@ p {
   padding: 10px;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact input[type="text"]:hover,
-.how-it-works .faq .accordian .accordion-item #contact input[type="email"]:hover,
-.how-it-works .faq .accordian .accordion-item #contact textarea:hover {
+.how-it-works .faq .accordion .accordion-item #contact input[type="text"]:hover,
+.how-it-works .faq .accordion .accordion-item #contact input[type="email"]:hover,
+.how-it-works .faq .accordion .accordion-item #contact textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact textarea {
+.how-it-works .faq .accordion .accordion-item #contact textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact button[type="submit"] {
+.how-it-works .faq .accordion .accordion-item #contact button[type="submit"] {
   cursor: pointer;
   width: 100px;
   border-radius: 20px;
@@ -838,18 +838,18 @@ p {
   font-size: 15px;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact button[type="submit"]:hover {
+.how-it-works .faq .accordion .accordion-item #contact button[type="submit"]:hover {
   background: #09c;
   -webkit-appearance: none;
   transition: background-color 0.3s ease-in-out;
 }
 
-.how-it-works .faq .accordian .accordion-item #contact button[type="submit"]:active {
+.how-it-works .faq .accordion .accordion-item #contact button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.how-it-works .faq .accordian .accordion-item #contact input:focus,
-.how-it-works .faq .accordian .accordion-item #contact textarea:focus {
+.how-it-works .faq .accordion .accordion-item #contact input:focus,
+.how-it-works .faq .accordion .accordion-item #contact textarea:focus {
   outline: 0;
   border: 1px solid #999;
 }
@@ -1505,21 +1505,21 @@ p {
   .how-it-works .steps #step1 {
     margin-top: 75px;
   }
-  .how-it-works .faq .accordian {
+  .how-it-works .faq .accordion {
     width: 80vw;
   }
-  .how-it-works .faq .accordian .accordion-item {
+  .how-it-works .faq .accordion .accordion-item {
     padding: 12px;
   }
-  .how-it-works .faq .accordian .accordion-item h4 {
+  .how-it-works .faq .accordion .accordion-item h4 {
     font-size: 18px;
     padding-top: 10px;
   }
-  .how-it-works .faq .accordian .accordion-item .arrow-box {
+  .how-it-works .faq .accordion .accordion-item .arrow-box {
     position: relative;
     top: 0px;
   }
-  .how-it-works .faq .accordian .accordion-item .panel {
+  .how-it-works .faq .accordion .accordion-item .panel {
     padding: 0;
   }
   .footer {
@@ -1566,8 +1566,8 @@ p {
   .homepage .industry .text {
     width: 80%;
   }
-  .how-it-works .faq .accordian .panel #contact input,
-  .how-it-works .faq .accordian .panel #contact textarea {
+  .how-it-works .faq .accordion .panel #contact input,
+  .how-it-works .faq .accordion .panel #contact textarea {
     width: 90%;
   }
   .packages .more-flex {
@@ -1799,22 +1799,22 @@ p {
     .how-it-works .steps #analytics {
       width: 60vw;
     }
-    .how-it-works .faq .accordian {
+    .how-it-works .faq .accordion {
       width: 100%;
     }
-    .how-it-works .faq .accordian .accordion-item {
+    .how-it-works .faq .accordion .accordion-item {
       width: unset;
     }
-    .how-it-works .faq .accordian ul {
+    .how-it-works .faq .accordion ul {
       width: 90vw;
     }
-    .how-it-works .faq .accordian .accordion-item .help-icon {
+    .how-it-works .faq .accordion .accordion-item .help-icon {
       display: none;
     }
-    .faq .accordian .accordion-item .arrow-box {
+    .faq .accordion .accordion-item .arrow-box {
       display: none;
     }
-    .how-it-works .faq .accordian .accordion-item h4 {
+    .how-it-works .faq .accordion .accordion-item h4 {
       font-size: 16px;
       line-height: 1.5;
     }
