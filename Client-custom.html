@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
+     
   <script>
     window.onscroll = function () {
       scrollFunction();
@@ -32,8 +33,7 @@
     type="text/javascript"></script>
 
   <title>Gain Social Media</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  
 <script type="text/javascript">
 
@@ -43,16 +43,15 @@ function updatesum() {
     var sum1 = 0;
     //iterate through each textboxes and add the values
     $(".price-option").each(function() {
-      
+
         //add only if the value is number
         if(!isNaN(this.value) && this.value.length!=0) {
             sum1 += parseFloat(this.value);
-            sum_new=sum1+599;
         }
 
     });
     //.toFixed() method will roundoff the final sum to 2 decimal places
-    $(".price").val(sum_new);
+    $(".price").val(sum1);
 }
 
 </script>
@@ -60,7 +59,6 @@ function updatesum() {
 
 <body style="background-color: #e9ecef;">
  
-
   <div class="navbar" id="navbar">
     <img class="logo" src="assets/logo-drk-bg.svg" alt="Gain Social Media"
       id="logo" />
@@ -82,47 +80,103 @@ function updatesum() {
     </ul>
   </div>
 
-
-
-
-
-  <div class="container manish" style="padding-top:120px;">
+    <div class="container manish" style="padding-top:120px;">
         <div class="row ">
-            <div class="col-sm-12 col-md-8 shadow  p-5" style="background-color: #fff;border-radius: 12px;">
+            <div class="col-sm-12 col-md-8 shadow  p-5 m-auto" style="background-color: #fff;border-radius: 12px;">
                 <div class="form px-5">
-                    <h2 class="head-h2 my-4">Select Additional Addons</h2>
-                        <form id="silver_form" method="POST" action="paypal.php">
-                            <input type="hidden" name="package_name" value="Enterprise">
+                    <h2 class="head-h2 my-4">Client custom made package form</h2>
+                    <form id="gold_form" method="POST" action="paypal.php">
 
+                      <input type="hidden" name="package_name" value="client_custom">
                         <div class="form-group">
-                            <select class="form-control price-option" name="social_media" onChange="updatesum()">
-                                <option>Social Media Options</option> 
-                                <option value="120"> Pinterest – 5 Posts per week (£120.00/Month) </option>
+                            <select class="form-control price-option" name="social_media1" onChange="updatesum()" >
+                                <option selected disabled=""> Social Media Option 1</option> 
+                                <option value="145"> Instagram - 5 Posts per week (£145.00/month)</option>
+                               <option value="100"> Twitter – 7 Posts per week (£100.00/Month)</option>
+                                <option value="125"> Facebook – 7 Posts per week (£125.00/Month)</option>
+                                <option value="120"> Pinterest – 5 Posts per week (£120.00/Month)</option>
                                 <option value="85"> Google – 5 Posts per week (£85.00/Month) </option>
                                 <option value="95"> LinkedIn – 5 Posts per week (£95.00/Month) </option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <select class="form-control price-option" name="fb_insta" onChange="updatesum()" >
-                                <option>Facebook / Instagram Advertising </option> 
+                            <select class="form-control price-option" name="social_media2" onChange="updatesum()">
+                                <option selected disabled="">Social Media Option 2</option> 
+                                <option value="145">Instagram - 5 Posts per week (£145.00/month)</option>
+                               <option value="100"> Twitter – 7 Posts per week (£100.00/Month)</option>
+                                <option value="125"> Facebook – 7 Posts per week (£125.00/Month)</option>
+                                <option value="120"> Pinterest – 5 Posts per week (£120.00/Month)</option>
+                                <option value="85"> Google – 5 Posts per week (£85.00/Month) </option>
+                                <option value="95"> LinkedIn – 5 Posts per week (£95.00/Month) </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control price-option" name="social_media3" onChange="updatesum()">
+                                <option selected disabled="">Social Media Option 3</option> 
+                                <option value="145">Instagram - 5 Posts per week (£145.00/month)</option>
+                               <option value="100"> Twitter – 7 Posts per week (£100.00/Month)</option>
+                                <option value="125"> Facebook – 7 Posts per week (£125.00/Month)</option>
+                                <option value="120"> Pinterest – 5 Posts per week (£120.00/Month)</option>
+                                <option value="85"> Google – 5 Posts per week (£85.00/Month) </option>
+                                <option value="95"> LinkedIn – 5 Posts per week (£95.00/Month) </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control price-option" name="social_media4" onChange="updatesum()">
+                                <option selected disabled="">Social Media Option 4</option> 
+                              <option value="145">Instagram - 5 Posts per week (£145.00/month)</option>
+                               <option value="100"> Twitter – 7 Posts per week (£100.00/Month)</option>
+                                <option value="125"> Facebook – 7 Posts per week (£125.00/Month)</option>
+                                <option value="120"> Pinterest – 5 Posts per week (£120.00/Month)</option>
+                                <option value="85"> Google – 5 Posts per week (£85.00/Month) </option>
+                                <option value="95"> LinkedIn – 5 Posts per week (£95.00/Month) </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control price-option" name="social_media5" onChange="updatesum()">
+                                <option selected disabled="">Social Media Option 5</option> 
+                                <option value="145">Instagram - 5 Posts per week (£145.00/month)</option>
+                               <option value="100"> Twitter – 7 Posts per week (£100.00/Month)</option>
+                                <option value="125"> Facebook – 7 Posts per week (£125.00/Month)</option>
+                                <option value="120"> Pinterest – 5 Posts per week (£120.00/Month)</option>
+                                <option value="85"> Google – 5 Posts per week (£85.00/Month) </option>
+                                <option value="95"> LinkedIn – 5 Posts per week (£95.00/Month) </option>
+                            </select>
+                        </div>
+                        <div class="form-group"> 
+                            <select class="form-control price-option" name="social_media6" onChange="updatesum()">
+                                <option selected disabled="">Social Media Option 6</option> 
+                               <option value="145">Instagram - 5 Posts per week (£145.00/month)</option>
+                               <option value="100"> Twitter – 7 Posts per week (£100.00/Month)</option>
+                                <option value="125"> Facebook – 7 Posts per week (£125.00/Month)</option>
+                                <option value="120"> Pinterest – 5 Posts per week (£120.00/Month)</option>
+                                <option value="85"> Google – 5 Posts per week (£85.00/Month) </option>
+                                <option value="95"> LinkedIn – 5 Posts per week (£95.00/Month) </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control price-option" name="fb_insta" onChange="updatesum()">
+                                <option selected disabled="">Facebook / Instagram Advertising </option> 
                                 <option value="170"> £100.00 FB/Insta Advertising (£170.00/Month Incl. Management Fee)  </option>
                                 <option value="480"> £300.00 FB/Insta Advertising (£480.00/Month Incl. Management Fee)  </option>
                                 <option value="800"> £500.00 FB/Insta Advertising (£800.00/Month Incl. Management Fee)  </option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <select class="form-control price-option" name="grouth_booster" onChange="updatesum()" >
-                                <option >Growth Boosters</option>
-                                <option value="199"> Elite Instagram Growth (£199.00/Month) </option>       
+                            <select class="form-control price-option" name="grouth_booster" onChange="updatesum()">
+                                <option selected disabled="">Growth Boosters</option>
+                                <option value="199"> Instagrowth (199.00/Month) </option>       
+                                <option value="299"> Elite Instagram Growth (£299.00/Month) </option>       
                                 <option value="199"> Twitter Growth (£199.00/Month) </option>   
                                 <option value="299"> Elite Twitter Growth (£299.00/Month) </option>   
                             </select>
                         </div>
                         <div class="form-group">
-                            <select class="form-control price-option" name="blogs" onChange="updatesum()" >
-                                <option>Blogs</option>
+                            <select class="form-control price-option" name="blogs" onChange="updatesum()">
+                                <option selected disabled="">Blogs</option>
                                 <option value="350"> 1 x 1000 Word SEO Blog Post (£350.00/Month) </option>
-                                <option value="640"> 2 x 1000 Word SEO Blog Post (£640.00/Month) </option>
+                                <option value="640"> 2 x 1000 Words SEO Blog Post (£640.00/Month) </option>
                                 <option value="940"> 3 x 1000 Word SEO Blog Post (£940.00/Month) </option>
                                 <option value="1240"> 4 x 1000 Word SEO Blog Post (£1240/Month) </option>
                                 <option value="1540"> 5 x 1000 Word SEO Blog Post (£1540/Month) </option>
@@ -131,26 +185,26 @@ function updatesum() {
                         <div class="form">
                             <h2 class="head-h2 mt-4">TOTAL *</h2>
                             <div class="form-group form-inline">
-                                <label for="email"><strong>Enterprise Package (Including any addons)
-                                        <input type="text" class="form-control price" name="total" placeholder="£" style="width: 69px; text-align: center; margin: 0 15px;" value="599" readonly>
+                                <label for="email"><strong>Custom Made Package(Including any addons)
+                                        <input type="text" class="form-control price" name="total" placeholder="£" style="width: 69px; text-align: center; margin: 0 15px;">
                                         GBP for each month</strong>
                                 </label>
                             </div>
                         </div>
-                    
+                   
                 </div>
                 <hr class="m-5">
                 <div class="form px-5">
                     <h2 class="head-h2 my-4">Your Basic Information</h2>
-                   
+                  
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="First Name" name="first_name" required>
+                            <input type="text" class="form-control" placeholder="First Name" name="first_name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last Name" name="last_name" required>
+                            <input type="text" class="form-control" placeholder="Last Name" name="last_name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" name="email_id" required>
+                            <input type="email" class="form-control" placeholder="Email Address" name="email_id">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Company Name" name="company_name">
@@ -160,6 +214,7 @@ function updatesum() {
                         </div>
                     
                 </div>
+                   <hr class="m-5">
                 <div class="form px-5">
                     <h2 class="head-h2 my-4">Additional Information</h2>
                     
@@ -172,6 +227,7 @@ function updatesum() {
                         <div class="form-group">
                             <textarea class="form-control" rows="5" placeholder="Companies of Interest Your competitors or influencers  @example"name="company_influencers"></textarea>
                         </div>
+
                         <div class="form-group">
 
                             <select class="form-control" name="age">
@@ -191,7 +247,7 @@ function updatesum() {
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="gender">
-                                <option selected disabled="">Gender</option>
+                               <option selected disabled="">Gender</option>
                                 <option value="male"> Male</option>
                                 <option value="female"> Female</option>
                                 <option value="both"> Both</option>
@@ -200,44 +256,23 @@ function updatesum() {
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Location" name="location">
                         </div>
-                        <button type="submit" class="btn btn-primary">PAY NOW </button>
-                        <a href="#" class="ml-5"><img src="paypal.png" class="img-fluid" alt="paypal"></a>
+                        <button type="submit" class="btn btn-primary">Submit </button>
+                        
                     </form>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 ">
-                <div class="jumbotron p-0 shadow " style="height: 600px;background-color: #fff;border-radius: 12px;    overflow: hidden;">
-                    <h2 class="text-center bg-dark p-2 text-light">Enterprise </h2>
-                    <h2 class="text-center p-3">£599/Month</h2>
-                    <div class="columns px-3">
-                        <ul class="view-list">
-                            <li>  7 Facebook Posts/week </li>
-                            <li> 7 Twitter Posts/ week </li>   
-                            <li> 5 Instagram Posts / week </li>       
-                            <li> Instagrowth </li>
-                            <li>  £50 Facebook Advertising </li>
-                            <li>Detailed competitor research </li>    
-                            <li>Increased Reach </li>   
-                            <li> Monthly Progress Report </li>   
-                            <li> No Set Up Fee </li>
-                            <li> Cancel Anytime </li>
-                            <li> 14 Day Money Back Guarantee </li>       
-                            <li> Secure Payment </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+             
         </div>
     </div>
 
 
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
   <!-------------- Footer --------------->
 
   <div id="footer" class="footer">
@@ -254,7 +289,7 @@ function updatesum() {
         <div class="contact">
           <h4>Contact Us</h4>
           <p><a href="mailto:info@gainsocialmedia.co.uk"
-            target="_blank">info@gainsocialmedia.co.uk</a></p>
+              target="_blank">info@gainsocialmedia.co.uk</a></p>
         </div>
         <div class="follow">
           <h4 class="follow-us">Follow Us</h4>
@@ -282,7 +317,7 @@ function updatesum() {
           <li><a href=""
               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gainsocialmedia/15min'});return false;">Schedule
               A Call</a></li>
-              <li><a href="manage.html" id="manage">Manage Subscription</a></li>
+          <li><a href="manage.html" id="manage">Manage Subscription</a></li>
           <li><a href="legal.html">FAQ's</a></li>
           <li><a href="legal.html">Terms & Conditions</a></li>
         </ul>
@@ -297,7 +332,7 @@ function updatesum() {
       </p>
     </div>
   </div>
-</div>
+  </div>
 </body>
 
 </html>
